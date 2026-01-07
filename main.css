@@ -110,14 +110,23 @@ main a:hover {
   transform: scale(1.01);
 }
 
-
-
 main h4 {
   font-size: 64px;
   padding-bottom: 2rem;
   font-family: "Figtree", sans-serif;
   font-weight: 600;
   line-height: 5rem;
+}
+
+main h5 {
+  font-size: 38px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  background-color: #F0F0F0;
+
 }
 
 .bio {
@@ -143,10 +152,10 @@ main h4 {
 }
 
 main h2 {
-  font-size: 32px;
+  font-size: 40px;
   font-family: "Figtree", sans-serif;
   font-weight: 600;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 main h3 {
@@ -155,10 +164,11 @@ main h3 {
   padding-top: 2rem;
   font-family: "Figtree", sans-serif;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .projects {
-  margin: 4rem auto 10rem auto;
+  margin: 4rem auto 12rem auto;
   text-align: left;
   font-family: "Lato", sans-serif;
   font-size: 15px;
@@ -166,9 +176,29 @@ main h3 {
   line-height: 1.5rem;
 }
 
-.cover {
+caption {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.objective {
+  padding-top: 4rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.objective h3 {
+  flex-shrink: 0;       
+  white-space: nowrap;    
+  padding: 0;
+}
+
+.full-bleed img {
   width: 100%;
   display: block;
+    margin: 0 auto 10rem auto;
 }
 
 figure {
@@ -220,6 +250,15 @@ figure {
   font-size: 15px;
   max-width: 50%;
   line-height: 1.5rem;
+}
+
+.proposition {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  line-height: 2rem;
+  width: 50%;
+  margin: 0 auto 10rem auto;
 }
 
 .logo {
@@ -281,7 +320,7 @@ main video {
 .final {
   width: 100%;
   display: block;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 10rem auto;
 }
 
 footer {
@@ -311,8 +350,7 @@ footer {
   margin: 2rem 0 0 0;
 }
 
-.one,
-.two {
+.one, .two {
   list-style-type: none;
   display: flex;
   gap: 4rem;
@@ -337,6 +375,42 @@ footer ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.plunge-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0 auto 10rem auto;
+  width: 100%;
+}
+
+.plunge-grid img {
+  width: 100%;
+  display: block;
+}
+
+.p5-sketch {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: 650px;
+}
+
+.generative-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 43.431% 56.570%;
+  gap: 1rem;
+  margin: 0 auto 10rem auto;
+  width: 75%;
+}
+
+.generative-grid img {
+  width: 100%;
+  display: block;
 }
 
 @media (max-width: 499px) {
@@ -475,6 +549,7 @@ footer ul {
     padding-top: 2rem;
     font-family: "Figtree", sans-serif;
     font-weight: 600;
+    text-transform: uppercase;
   }
 
   .projects {
