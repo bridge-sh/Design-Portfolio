@@ -123,10 +123,7 @@ main h5 {
   font-family: "Figtree", sans-serif;
   font-weight: 600;
   text-align: center;
-  padding: 3rem;
-  margin-bottom: 4rem;
-  background-color: #F0F0F0;
-
+  margin: 10rem auto 4rem auto;
 }
 
 .bio {
@@ -222,7 +219,7 @@ figure {
   justify-content: center;
   grid-template-columns: 47.237% 52.763%;
   margin-top: 1rem;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
   gap: 1rem;
 }
 
@@ -305,7 +302,7 @@ main video {
   margin: 0 auto;
   height: auto;
   padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
 }
 
 .video2 {
@@ -397,6 +394,7 @@ footer ul {
   width: 100%;
   max-width: 1000px;
   height: 650px;
+  margin-bottom: 10rem;
 }
 
 .generative-grid {
@@ -409,6 +407,20 @@ footer ul {
 }
 
 .generative-grid img {
+  width: 100%;
+  display: block;
+}
+
+.testing-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1.333fr .7490fr;
+  gap: 1rem;
+  margin: 0 auto 10rem auto;
+  width: 75%;
+}
+
+.testing-grid img {
   width: 100%;
   display: block;
 }
@@ -677,7 +689,7 @@ footer ul {
   .final {
     width: 100%;
     display: block;
-    margin: 0 auto 6rem auto;
+    margin: 0 auto 10rem auto;
   }
 
   footer {
