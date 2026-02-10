@@ -39,20 +39,53 @@ main {
 
 main h1 {
   font-size: 64px;
-  text-align: center;
-  padding-bottom: 2rem;
+  text-align: left;
+  padding-bottom: 1rem;
   font-family: "Figtree", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 5rem;
 }
 
 .about {
-  font-size: 20px;
-  text-align: center;
-  padding-left: 30%;
-  padding-right: 30%;
+
+  font-size: 24px;
+  text-align: left;
+  width: 50%;
   font-family: "Lato", sans-serif;
+  line-height: 2.5rem;
 }
+
+.intro {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+/*main h1 {
+  font-size: 58px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+.about {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  max-width: 400px;
+  margin: 0;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem;
+  padding-top: 6rem;
+  gap: 4rem;
+}*/
+
 
 main a {
   text-decoration: none;
@@ -64,11 +97,6 @@ main a:hover {
   color: #FC6C85;
 }
 
-.intro {
-  padding-bottom: 8rem;
-  padding-top: 6rem;
-  line-height: 2rem;
-}
 
 .wrapper {
   background-color: white;
@@ -106,8 +134,13 @@ main a:hover {
   display: block;
 }
 
-.grid-image:hover {
+/*.grid-image:hover {
   transform: scale(1.01);
+}*/
+
+.grid-image:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 main h4 {
