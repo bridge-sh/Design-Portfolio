@@ -82,7 +82,7 @@ main h1 {
 }
 
 .star {
-  width: 10%;
+  width: 9%;
 }
 
 .star-about {
@@ -213,6 +213,7 @@ main h5 {
   width: 100%;
   height: auto;
   margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 main h2 {
@@ -439,7 +440,9 @@ footer ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-}
+} 
+
+
 
 .plunge-grid {
   display: grid;
