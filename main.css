@@ -70,7 +70,7 @@ main h1 {
 
 .intro {
   padding-bottom: 2rem;
-  margin-top: 22rem;
+  margin-top: 21rem;
   margin-left: 2rem;
 }
 
@@ -179,6 +179,14 @@ main a:hover {
   opacity: 75%;
 }
 
+.about-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 4rem 10rem 4rem;
+}
+
 main h4 {
   font-size: 64px;
   padding-bottom: 2rem;
@@ -200,7 +208,8 @@ main h5 {
   font-size: 17px;
   width: 50%;
   line-height: 2rem;
-  margin: 2rem 4rem 6rem 2rem;
+  margin-right: 4rem;
+  margin: 2rem 6rem 0 2rem;
 }
 
 .about-section {
@@ -208,14 +217,15 @@ main h5 {
   align-items: center;
   justify-content: left;
   gap: 4rem;
-  padding-bottom: 6rem;
+  padding-bottom: 1rem;
 }
 
 .me img {
   width: 100%;
   height: auto;
-  margin-left: 2rem;
-  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 main h2 {
@@ -239,7 +249,7 @@ main h3 {
   text-align: left;
   font-family: "Lato", sans-serif;
   font-size: 15px;
-  max-width: 50%;
+  max-width: 45%;
   line-height: 1.5rem;
 }
 
@@ -265,7 +275,19 @@ caption {
 .full-bleed img {
   width: 100%;
   display: block;
-    margin: 0 auto 10rem auto;
+  margin: 0 auto 10rem auto;
+}
+
+.full-bleed-chamberlain1 img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.full-bleed-chamberlain2 img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 5rem auto;
 }
 
 figure {
@@ -275,8 +297,11 @@ figure {
 .circleville-grid {
   display: grid;
   justify-content: center;
+  align-items: center;
   grid-template-columns: 58.586% 41.425%;
   gap: 1rem;
+  margin: 0 auto 0 auto;
+  width: 100%;
 }
 
 .circleville-grid img {
@@ -287,10 +312,11 @@ figure {
 .circleville-grid2 {
   display: grid;
   justify-content: center;
+  align-items: center;
   grid-template-columns: 47.237% 52.763%;
-  margin-top: 1rem;
-  margin-bottom: 10rem;
   gap: 1rem;
+  margin: 1rem auto 10rem auto;
+  width: 100%;
 }
 
 .circleville-grid2 img {
@@ -298,9 +324,56 @@ figure {
   display: block;
 }
 
-.moodboard {
-  width: 75%;
+.circleville-grid3 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  margin: 1rem auto 10rem auto;
+  width: 80%;
+}
+
+.circleville-grid3 img {
+  width: 100%;
   display: block;
+}
+
+.circleville-grid4 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem auto 1rem auto;
+  width: 80%;
+}
+
+.circleville-grid4 img {
+  width: 100%;
+  display: block;
+}
+
+.circleville-grid5 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem auto 10rem auto;
+  width: 80%;
+}
+
+.circleville-grid5 img {
+  width: 100%;
+  display: block;
+}
+
+
+
+.moodboard {
+  display: block;
+  width: 80%;
   margin: 0 auto 10rem auto;
 }
 
@@ -315,7 +388,7 @@ figure {
   text-align: left;
   font-family: "Lato", sans-serif;
   font-size: 15px;
-  max-width: 50%;
+  max-width: 45%;
   line-height: 1.5rem;
 }
 
@@ -358,7 +431,7 @@ figure {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   margin: 0 auto 10rem auto;
-  width: 75%;
+  width: 80%;
 }
 
 .vows-grid img {
@@ -452,7 +525,7 @@ footer ul {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin: 0 auto 10rem auto;
-  width: 100%;
+  width: 80%;
 }
 
 .plunge-grid img {
@@ -495,6 +568,49 @@ footer ul {
 .testing-grid img {
   width: 100%;
   display: block;
+}
+
+.infographic {
+  display: block;
+  width: 30%;
+  margin: 0 auto 10rem auto;
+}
+
+.infographic-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem auto 1rem auto;
+  width: 80%;
+}
+
+.infographic-grid img {
+  width: 100%;
+  display: block;
+}
+
+.infographic-grid2 {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto 10rem auto;
+  width: 80%;
+}
+
+.infographic-grid2 img {
+  width: 100%;
+  display: block;
+}
+
+.coop {
+  margin: 4rem auto 6rem auto;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  max-width: 45%;
+  line-height: 1.5rem;
 }
 
 @media (max-width: 499px) {
