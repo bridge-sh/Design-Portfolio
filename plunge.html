@@ -8,6 +8,11 @@
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="main.css">
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,22 +108,46 @@
         </p>
       </div>
 
-      <img class="moodboard" src="images/plunge-style.jpg" alt="Visual System">
+      <img class="process" src="images/plunge-style.jpg" alt="Visual System">
 
       <div class="title">
         <h3>Final Plunge Publication</h3>
       </div>
+      
 
-      <div class="plunge-grid">
-        <img src="images/cover.png" alt="Cover">
-        <img src="images/toc.png" alt="Table of Contents">
-        <img src="images/spread-1.1.png" alt="Artcile 1">
-        <img src="images/spread-1.2.png" alt="Article 1">
-        <img src="images/spread-1.3.png" alt="Article 1">
-        <img src="images/spread-2.1.png" alt="Article 2">
-        <img src="images/spread-2.2.png" alt="Article 2">
-        <img src="images/spread-2.3.png" alt="Article 2">
+      <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/cover.png" style="width:100%">
+        <img class="mySlides" src="images/toc.png" style="width:100%">
+        <img class="mySlides" src="images/spread-1.1.png" style="width:100%">
+        <img class="mySlides" src="images/spread-1.2.png" style="width:100%">
+        <img class="mySlides" src="images/spread-1.3.png" style="width:100%">
+        <img class="mySlides" src="images/spread-2.1.png" style="width:100%">
+        <img class="mySlides" src="images/spread-2.2.png" style="width:100%">
+        <img class="mySlides" src="images/spread-2.3.png" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = x.length }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+        }
+      </script>
 
       <div class="content">
         <h3>Interactive Digital Publication</h3>
@@ -137,8 +166,8 @@
           For my animation, I wanted to show the spike of adrenaline during races in swimming. Swimming starts with anticipation and then once you hit the water you give all of your energy, and then you hit the wall and it suddenly ends. I used movement to emulate the adrenaline and feeling of swimming laps back and forth.
         </p>
       </div>
-    
-      
+
+
 
 
       <img class="moodboard" src="images/wordmark comp.gif" alt="">
@@ -161,6 +190,6 @@
     </footer>
   </div>
 
-  
+
 </body>
 </html>

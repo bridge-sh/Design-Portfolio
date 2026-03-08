@@ -637,6 +637,39 @@ footer ul {
   line-height: 1.5rem;
 }
 
+.w3-content {
+  position: relative;
+  max-width: 60%;
+  margin: 0 auto 10rem auto;
+}
+
+.w3-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 20px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
+
+.w3-button:hover {
+  background-color: rgba(0,0,0,0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.w3-display-left {
+  left: 15px;
+}
+
+.w3-display-right {
+  right: 15px;
+}
+
 @media (max-width: 499px) {
 
   header {
