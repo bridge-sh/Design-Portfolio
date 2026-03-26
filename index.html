@@ -52,33 +52,34 @@
         <p class="about2"> A communication designer who is passionate about <i>human-centered design</i> and blending <i>aesthetics with function.</i></p>
       </div>
 
+      <div class="cursor-circle">View</div>
+
       <div class="grid">
-        <a href="little-locals.html" class="grid-image">
-          <img src="images/little-locals.jpg" alt="Little Locals">
+        <a href="plunge.html" class="grid-image" data-title="Plunge">
+          <img src="images/plunge.jpg" alt="Plunge">
         </a>
 
-        <a href="kitchy.html" class="grid-image">
+        <a href="kitchy.html" class="grid-image" data-title="Kitchy">
           <img src="images/kitchy.jpg" alt="PathFinder">
         </a>
       </div>
 
       <div class="grid2">
-        <a href="circleville.html" class="grid-image">
+        <a href="circleville.html" class="grid-image" data-title="Circleville Pumpkin Show">
           <img src="images/circleville.jpg" alt="Circleville Pumpkin Show">
         </a>
 
-        <a href="broken-vows.html" class="grid-image">
+        <a href="broken-vows.html" class="grid-image" data-title="Broken Vows">
           <img src="images/test-smaller.gif" alt="Broken Vows">
         </a>
       </div>
 
       <div class="grid3">
-        <a href="infographic.html" class="grid-image">
+        <a href="infographic.html" class="grid-image" data-title="Melting Future">
           <img src="images/infographic.jpg" alt="Melting Future">
-
-          <a href="plunge.html" class="grid-image">
-          <img src="images/plunge.jpg" alt="Plunge">
         </a>
+        <a href="little-locals.html" class="grid-image" data-title="Little Locals">
+          <img src="images/little-locals.jpg" alt="Little Locals">
         </a>
       </div>
 
@@ -102,6 +103,29 @@
     </ul>
   </footer>
   </div>
+
+  <script>
+    const cursor = document.querySelector(".cursor-circle");
+    const images = document.querySelectorAll(".grid-image");
+
+    images.forEach(image => {
+
+      image.addEventListener("mouseenter", () => {
+        cursor.style.opacity = "1";
+        cursor.textContent = image.dataset.title;
+      });
+
+      image.addEventListener("mouseleave", () => {
+        cursor.style.opacity = "0";
+      });
+
+      image.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+
+    });
+  </script>
 
 </body>
 </html>

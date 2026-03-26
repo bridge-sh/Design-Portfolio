@@ -6,6 +6,11 @@
   <title>Kitchy</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="main.css">
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +65,18 @@
         <h3>USER PERSONAS</h3>
       </div>
 
-      <img class="process" src="images/kitchy-personas.jpg" alt="User Personas">
+      <img class="process" src="images/kitchy-personas.png" alt="User Personas">
+
+      <div class="content">
+        <H3>Task Flows</H3>
+
+        <p>
+          The two main task flows that I built out are for cooking a meal in the oven and for provisioning a new appliance into the app.
+        </p>
+      </div>
+
+      <img class="task-flow1" src="images/task-flow1.png" alt="Task Flow">
+      <img class="task-flow2" src="images/task-flow2.png" alt="Task Flow">
 
       <div class="content">
         <H3>INITIAL SKETCHES</H3>
@@ -70,13 +86,14 @@
         </p>
       </div>
 
-      <img class="moodboard" src="images/pathfinder-sketches.jpg" alt="Initial Sketches">
+      <img class="moodboard" src="images/kitchy-sketch.jpg" alt="Initial Sketches">
 
       <div class="title">
         <h3>MOODBOARD</h3>
       </div>
 
       <img class="moodboard" src="images/kitchy-moodboard.png" alt="Moodboard">
+
 
       <div class="content">
         <h3>STYLE GUIDE</h3>
@@ -86,52 +103,83 @@
         </p>
       </div>
 
-      <img class="moodboard" src="images/kitchy-style.png" alt="Style Guide">
+      <img class="moodboard" src="images/style-test.jpg" alt="Style Guide">
+
+      <div class="title">
+        <h3>App Icon</h3>
+      </div>
+
+      <img class="moodboard" src="images/app-icon-kitchy.jpg" alt="Style Guide">
 
       <div class="title">
         <h3>FINAL SCREENS</h3>
       </div>
 
-      <div class="moodboard">
-        <img class="app" src="images/final-app.jpg" alt="PathFinder App">
-        <img class="app" src="images/final-app2.jpg" alt="PathFinder App">
-        <img class="app" src="images/final-app3.jpg" alt="PathFinder App">
+
+      <div class="w2-content w2-display-container">
+        <img class="mySlides" src="images/app-final1.jpg" style="width:100%">
+        <img class="mySlides" src="images/app-final2.jpg" style="width:100%">
+        <img class="mySlides" src="images/app-final3.jpg" style="width:100%">
+        <img class="mySlides" src="images/app-final4.jpg" style="width:100%">
+
+        <button class="w2-button w2-black w2-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w2-button w2-black w2-display-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = x.length }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+        }
+      </script>
 
       <div class="title">
         <h3>FINAL PROTOTYPE</h3>
       </div>
 
       <video controls class="video2">
-        <source src="videos/pathfinder-video.mov" type="video/mp4" />
+        <source src="videos/kitchy-prototype.mov" type="video/mp4" />
       </video>
 
       <div class="content">
         <h3>POSTER ADVERTISEMENT</h3>
 
         <p>
-          As a way to promote the app to college students looking for internships, I designed a poster meant to go on college campuses that advertises the app to students passing by.
+          As a way to promote the app to young adults interested in understanding their kitchen and learning to cook, I designed a poster advertisement to promote the app.
         </p>
       </div>
 
-      <img class="final" src="images/pathfinder-poster.png" alt="PathFinder App">
+      <img class="moodboard" src="images/kitchy-poster.jpg" alt="PathFinder App">
 
     </main>
 
     <footer>
-    <p class="footer-name">Sarah Bridge</p>
-    <img class="star" src="images/star.png" alt="star">
-    <ul class="one">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="https://drive.google.com/file/d/1v9qXQiI0atsIaPXbxPEGWOlSgjdEFn6Q/view" target="_blank">Resume</a></li>
-    </ul>
-    <p class="footer-name2">Follow Me</p>
-    <ul class="two">
-      <li><a href="https://www.linkedin.com/in/sarahbridgee/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-      <li><a href="https://www.instagram.com/sarahbridgedesign/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-    </ul>
-  </footer>
+      <p class="footer-name">Sarah Bridge</p>
+      <img class="star" src="images/star.png" alt="star">
+      <ul class="one">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="https://drive.google.com/file/d/1v9qXQiI0atsIaPXbxPEGWOlSgjdEFn6Q/view" target="_blank">Resume</a></li>
+      </ul>
+      <p class="footer-name2">Follow Me</p>
+      <ul class="two">
+        <li><a href="https://www.linkedin.com/in/sarahbridgee/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/sarahbridgedesign/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </footer>
   </div>
 
 </body>

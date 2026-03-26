@@ -44,6 +44,8 @@
     </header>
     <main>
 
+      <div class="cursor-circle">View</div>
+
       <div class="about-section">
         <figure class="me">
           <img src="images/myphoto.jpg" alt="Sarah Bridge">
@@ -67,11 +69,11 @@
       </div>
 
       <div class="about-grid">
-        <a href="ge.html" class="grid-image">
+        <a href="ge.html" class="grid-image" data-title="GE Aerospace">
           <img src="images/about-ge.jpg" alt="GE Aerospace">
         </a>
 
-        <a href="chamberlain.html" class="grid-image">
+        <a href="chamberlain.html" class="grid-image" data-title="Chamberlain Group">
           <img src="images/about-chamberlain.jpg" alt="Chamberlain Group">
         </a>
       </div>
@@ -94,5 +96,28 @@
   </footer>
   </div>
 
+
+  <script>
+    const cursor = document.querySelector(".cursor-circle");
+    const images = document.querySelectorAll(".grid-image");
+
+    images.forEach(image => {
+
+      image.addEventListener("mouseenter", () => {
+        cursor.style.opacity = "1";
+        cursor.textContent = image.dataset.title;
+      });
+
+      image.addEventListener("mouseleave", () => {
+        cursor.style.opacity = "0";
+      });
+
+      image.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+
+    });
+  </script>
 </body>
 </html>

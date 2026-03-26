@@ -49,7 +49,7 @@ main h1 {
 }
 
 .about1 {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .about2 {
@@ -65,16 +65,13 @@ main h1 {
 .intro {
   padding-bottom: 2rem;
   margin-top: 21rem;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 .intro i {
   font-weight: 500;
 }
 
-.intro i:hover {
-  color: #369BCE;
-}
 
 .star {
   width: 9%;
@@ -138,36 +135,36 @@ main a:hover {
   display: grid;
   justify-content: center;
   grid-template-columns: 67.286fr 32.714fr;
-  gap: 1rem;
-  margin: 0 2rem 0 2rem;
+  gap: 1.5rem;
+  margin: 0 3rem 0 3rem;
 }
 
 .grid2 {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 1rem 2rem 0 2rem;
+  gap: 1.5rem;
+  margin: 1.5rem 3rem 0 3rem;
 }
 
 .grid3 {
   display: grid;
   justify-content: center;
   grid-template-columns: 32.714fr 67.286fr;
-  gap: 1rem;
-  margin: 1rem 2rem 6rem 2rem;
+  gap: 1.5rem;
+  margin: 1.5rem 3rem 3rem 3rem;
 }
 
+.grid-image {
+  position: relative;
+  display: block;
+}
 
 .grid-image img {
   width: 100%;
   display: block;
   border-radius: 4px;
 }
-
-/*.grid-image:hover {
-  transform: scale(1.01);
-}*/
 
 .grid-image:hover {
   opacity: 75%;
@@ -177,8 +174,8 @@ main a:hover {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 1rem 4rem 10rem 4rem;
+  gap: 1.5rem;
+  margin: 1rem 4rem 6rem 4rem;
 }
 
 main h4 {
@@ -238,6 +235,43 @@ main h3 {
   text-transform: uppercase;
 }
 
+main h6 {
+  font-size: 24px;
+  padding: 1rem 0 0 .5rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cursor-circle {
+  position: fixed;
+  background: #D6F1FF;
+  color: #282828;
+
+  padding: 8px 18px;     /* controls pill size */
+  border-radius: 999px;   /* makes it pill shaped */
+  border: solid 1px #282828;
+
+  display: inline-flex;
+  align-items: left;
+  justify-content: center;
+
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  white-space: nowrap;    /* prevents text wrapping */
+
+  pointer-events: none;
+  transform: translate(0, -50%);
+  opacity: 0;
+  z-index: 1000;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.grid-image {
+  cursor: none;
+}
+
 .projects {
   margin: 4rem auto 12rem auto;
   text-align: left;
@@ -252,6 +286,7 @@ caption {
   text-transform: uppercase;
   font-size: 15px;
 }
+
 
 .objective {
   padding-top: 4rem;
@@ -269,7 +304,7 @@ caption {
 .full-bleed img {
   width: 100%;
   display: block;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 8rem auto;
 }
 
 .full-bleed-chamberlain1 img {
@@ -293,15 +328,15 @@ figure {
   align-items: center;
   gap: 1rem;
   margin: 1rem auto 1rem auto;
-  width: 80%;
+  width: 75%;
 }
 
 .circleville-img2 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 1rem auto 10rem auto;
-  width: 80%;
+  margin: 1rem auto 14rem auto;
+  width: 75%;
 }
 
 .circleville-img img {
@@ -321,7 +356,7 @@ figure {
   grid-template-columns: 1.5fr 1fr;
   gap: 1rem;
   margin: 1rem auto 1rem auto;
-  width: 80%;
+  width: 75%;
 }
 
 
@@ -339,8 +374,8 @@ figure {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 1rem auto 10rem auto;
-  width: 80%;
+  margin: 1rem auto 14rem auto;
+  width: 75%;
 }
 
 .circleville-grid2 img {
@@ -354,8 +389,8 @@ figure {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
-  margin: 1rem auto 10rem auto;
-  width: 80%;
+  margin: 1rem auto 14rem auto;
+  width: 75%;
 }
 
 .circleville-grid3 img {
@@ -370,7 +405,7 @@ figure {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin: 1rem auto 1rem auto;
-  width: 80%;
+  width: 75%;
 }
 
 .circleville-grid4 img {
@@ -379,13 +414,11 @@ figure {
 }
 
 .circleville-grid5 {
-  display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 1rem auto 10rem auto;
-  width: 80%;
+  margin: 1rem auto 14rem auto;
+  width: 75%;
 }
 
 .circleville-grid5 img {
@@ -397,8 +430,14 @@ figure {
 
 .moodboard {
   display: block;
-  width: 80%;
-  margin: 0 auto 10rem auto;
+  width: 75%;
+  margin: 0 auto 14rem auto;
+}
+
+.moodboard2 {
+  display: block;
+  width: 75%;
+  margin: 0 auto 1rem auto;
 }
 
 .title {
@@ -422,19 +461,19 @@ figure {
   font-size: 21px;
   line-height: 2rem;
   width: 50%;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 14rem auto;
 }
 
 .logo {
   width: 25%;
   display: block;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 14rem auto;
 }
 
 .process {
   width: 50%;
   display: block;
-  margin: 0 auto 8rem auto;
+  margin: 0 auto 14rem auto;
 }
 
 .projects img {
@@ -454,8 +493,8 @@ figure {
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  margin: 0 auto 10rem auto;
-  width: 80%;
+  margin: 0 auto 14rem auto;
+  width: 75%;
 }
 
 .vows-grid img {
@@ -465,11 +504,11 @@ figure {
 
 main video {
   display: block;
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
   height: auto;
-  padding-top: 2rem;
-  padding-bottom: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 14rem;
 }
 
 .video2 {
@@ -478,13 +517,13 @@ main video {
   margin: 0 auto;
   height: auto;
   padding-top: 0;
-  padding-bottom: 8rem;
+  padding-bottom: 14rem;
 }
 
 .final {
   width: 100%;
   display: block;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 14rem auto;
 }
 
 footer {
@@ -494,14 +533,14 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .5rem;
   justify-content: center;
 }
 
 .footer-name {
-  font-family: "Figtree", sans-serif;
+  font-family: "adobe-caslon-pro", serif;
   font-size: 250%;
-  font-weight: 600;
+  font-weight: 400;
   color: #282828;
   margin: 0;
 }
@@ -548,8 +587,8 @@ footer ul {
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 0 auto 10rem auto;
-  width: 80%;
+  margin: 0 auto 14rem auto;
+  width: 75%;
 }
 
 .plunge-grid img {
@@ -563,7 +602,7 @@ footer ul {
   width: 100%;
   max-width: 1000px;
   height: 650px;
-  margin-bottom: 10rem;
+  margin-bottom: 14rem;
 }
 
 .generative-grid {
@@ -571,7 +610,7 @@ footer ul {
   justify-content: center;
   grid-template-columns: 43.431% 56.570%;
   gap: 1rem;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 14rem auto;
   width: 75%;
 }
 
@@ -585,7 +624,7 @@ footer ul {
   justify-content: center;
   grid-template-columns: 1.333fr .7490fr;
   gap: 1rem;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 14rem auto;
   width: 75%;
 }
 
@@ -597,7 +636,7 @@ footer ul {
 .infographic {
   display: block;
   width: 30%;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 14rem auto;
 }
 
 .infographic-grid {
@@ -607,7 +646,7 @@ footer ul {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin: 1rem auto 1rem auto;
-  width: 80%;
+  width: 75%;
 }
 
 .infographic-grid img {
@@ -619,8 +658,8 @@ footer ul {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 1rem auto 10rem auto;
-  width: 80%;
+  margin: 1rem auto 14rem auto;
+  width: 75%;
 }
 
 .infographic-grid2 img {
@@ -640,7 +679,7 @@ footer ul {
 .w3-content {
   position: relative;
   max-width: 60%;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 14rem auto;
 }
 
 .w3-button {
@@ -670,327 +709,459 @@ footer ul {
   right: 15px;
 }
 
-@media (max-width: 499px) {
+.w2-content {
+  position: relative;
+  max-width: 75%;
+  margin: 0 auto 14rem auto;
+}
 
+.w2-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 20px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
+
+.w2-button:hover {
+  background-color: rgba(0,0,0,0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.w2-display-left {
+  left: 15px;
+}
+
+.w2-display-right {
+  right: 15px;
+}
+
+.task-flow1 {
+  display: block;
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+.task-flow2 {
+  display: block;
+  width: 75%;
+  margin: 0 auto 14rem auto;
+}
+
+/* Mobile Responsive Styles - Phone Sizes (480px and below) */
+@media (max-width: 480px) {
+
+  /* Header & Navigation */
   header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem .5rem;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .site-logo img {
-    height: 50px;
-    width: auto;
-    display: block;
-    padding-left: 2rem;
+    height: 40px;
   }
 
   nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
   }
 
   nav a {
-    text-transform: uppercase;
-    display: block;
-    color: #282828;
-    /*change color*/
-    text-decoration: none;
+    padding: 0.75rem 0;
+    font-size: 11px;
+    padding-left: 0;
   }
 
-  nav a:hover {
-    color: #369BCE;
-    border-radius: 1rem;
-    /*change*/
+  /* Main Content */
+  main {
+    padding: 0 2rem;
+  }
+
+  main h1 {
+    font-size: 32px;
+    width: 100%;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  main h2 {
+    font-size: 24px;
+    line-height: 2rem;
+  }
+
+  main h3 {
+    font-size: 16px;
+  }
+
+  main h4 {
+    font-size: 28px;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  main h5 {
+    font-size: 24px;
+    margin: 4rem auto 2rem auto;
+  }
+
+  main h6 {
+    font-size: 18px;
+  }
+
+  /* About Section */
+  .about1 {
+    font-size: 28px;
+  }
+
+  .about2 {
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.5rem;
+  }
+
+  .intro {
+    margin-left: 0;
+    margin-top: 6rem;
+    padding-bottom: 1rem;
+  }
+
+  .bio {
+    width: 100%;
+    margin: 2rem 0 4rem 0;
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .me img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    margin: 1rem 0 4rem 0;
+    gap: 1rem;
+  }
+
+  /* Grids */
+  .grid,
+  .grid2,
+  .grid3 {
+    grid-template-columns: 1fr;
+    margin: 1.5rem 0;
+    gap: 1rem;
+  }
+
+  /* Images & Layouts */
+  .star {
+    width: 15%;
+  }
+
+  .star-about {
+    width: 25%;
+  }
+
+  .circleville-img,
+  .circleville-img2,
+  .circleville-grid,
+  .circleville-grid2,
+  .circleville-grid3,
+  .circleville-grid4,
+  .circleville-grid5 {
+    width: 100%;
+    margin: 1rem 0 6rem 0;
+    gap: 0.5rem;
+  }
+
+  .circleville-grid,
+  .circleville-grid2,
+  .circleville-grid3,
+  .circleville-grid4 {
+    grid-template-columns: 1fr;
+  }
+
+  .moodboard,
+  .moodboard2 {
+    width: 100%;
+    margin: 0 0 6rem 0;
+  }
+
+  .vows-grid,
+  .plunge-grid,
+  .infographic-grid,
+  .generative-grid,
+  .testing-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 0 6rem 0;
+    gap: 0.5rem;
+  }
+
+  /* Typography & Content */
+  .projects,
+  .content,
+  .coop {
+    max-width: 100%;
+    margin: 2rem 0;
+    font-size: 14px;
+  }
+
+  .proposition {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 6rem 0;
+  }
+
+  .objective {
+    gap: 1rem;
+    padding-top: 2rem;
+    flex-direction: column;
+  }
+
+  .objective h3 {
+    padding: 0;
+  }
+
+  /* Images & Media */
+  .logo,
+  .process,
+  .infographic,
+  .task-flow1,
+  .task-flow2 {
+    width: 100%;
+    margin: 0 0 6rem 0;
+  }
+
+  .full-bleed img,
+  .full-bleed-chamberlain1 img,
+  .full-bleed-chamberlain2 img {
+    margin: 0 0 4rem 0;
+  }
+
+  main video {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+  .video2 {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+  .p5-sketch {
+    height: 350px;
+    margin-bottom: 6rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 4rem 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .footer-name {
+    font-size: 150%;
+  }
+
+  .footer-name2 {
+    font-size: 90%;
+    margin-top: 1rem;
+  }
+
+  .one,
+  .two {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer a {
+    font-size: 11px;
+  }
+
+  /* Carousel Buttons */
+  .w3-button,
+  .w2-button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .w3-content,
+  .w2-content {
+    max-width: 100%;
+  }
+
+}
+
+/* Tablet Responsive Styles (481px to 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  nav a {
+    padding: 1rem 2rem;
+    font-size: 11px;
   }
 
   main {
     padding: 0 2rem;
   }
 
-  .wrapper {
-    background-color: white;
-    max-width: 2500px;
-    margin: 0 auto;
-  }
-
   main h1 {
-    font-size: 48px;
-    text-align: center;
-    padding-bottom: 2rem;
-    font-family: "Figtree", sans-serif;
-    font-weight: 800;
-    line-height: 3rem;
-  }
-
-  .about {
-    font-size: 20px;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-    font-family: "Lato", sans-serif;
-  }
-
-  .intro {
-    padding-bottom: 6rem;
-    padding-top: 6rem;
-    line-height: 2rem;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 1rem;
-    justify-content: center;
-  }
-
-  .grid2 {
-    margin-top: 1rem;
-    margin-bottom: 6rem;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 1rem;
-    justify-content: center;
-  }
-
-  .grid-image img {
+    font-size: 42px;
     width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  main h4 {
-    font-size: 48px;
-    padding-bottom: 1rem;
-    font-family: "Figtree", sans-serif;
-    font-weight: 600;
     line-height: 3rem;
-  }
-
-  .bio {
-    margin-top: 2rem;
-    margin-bottom: 6rem;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    width: 75%;
-    line-height: 1.5rem;
-  }
-
-  .about-section {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: .5rem;
-    padding-bottom: 6rem;
-    flex-direction: column;
-  }
-
-  .me img {
-    width: 100%;
-    height: auto;
   }
 
   main h2 {
-    font-size: 32px;
-    font-family: "Figtree", sans-serif;
-    font-weight: 600;
-    line-height: 3rem;
+    font-size: 28px;
   }
 
-  main h3 {
-    font-size: 24px;
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-    font-family: "Figtree", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
+  main h4 {
+    font-size: 36px;
   }
 
-  .projects {
-    margin: 4rem auto 10rem auto;
-    text-align: left;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    max-width: 75%;
-    line-height: 1.5rem;
-  }
-
-  .cover {
+  .about2 {
     width: 100%;
-    display: block;
+    font-size: 20px;
+    line-height: 2rem;
   }
 
-  figure {
-    margin: 0;
+  .grid,
+  .grid2,
+  .grid3 {
+    grid-template-columns: 1fr;
+    margin: 1.5rem 2rem;
   }
 
-  .circleville-grid {
-    display: grid;
-    padding: .5 auto;
-    justify-content: center;
-    grid-template-columns: 100%;
-    gap: 1rem;
+  .about-grid {
+    grid-template-columns: 1fr;
+    margin: 1rem 2rem 4rem 2rem;
   }
 
-  .circleville-grid img {
-    width: 100%;
-    display: block;
+  .circleville-img,
+  .circleville-img2,
+  .circleville-grid,
+  .circleville-grid2,
+  .circleville-grid3,
+  .circleville-grid4,
+  .circleville-grid5 {
+    width: 90%;
+    margin: 1rem auto 6rem auto;
   }
 
-  .circleville-grid2 {
-    ddisplay: grid;
-    padding: .5 auto;
-    justify-content: center;
-    grid-template-columns: 100%;
-    margin-top: 1rem;
-    margin-bottom: 6rem;
-    gap: 1rem;
+  .circleville-grid,
+  .circleville-grid2,
+  .circleville-grid3,
+  .circleville-grid4 {
+    grid-template-columns: 1fr;
   }
 
-  .circleville-grid2 img {
-    width: 100%;
-    display: block;
+  .vows-grid,
+  .plunge-grid,
+  .infographic-grid,
+  .generative-grid,
+  .testing-grid {
+    width: 90%;
+    grid-template-columns: 1fr;
+    margin: 0 auto 6rem auto;
   }
 
-  .moodboard {
-    width: 100%;
-    display: block;
-    margin: 0 auto 10rem auto;
+  .projects,
+  .content,
+  .coop {
+    max-width: 80%;
   }
 
-  .title {
-    margin: 0 auto 1rem auto;
-    text-align: center;
+  .proposition {
+    width: 85%;
+    font-size: 18px;
   }
 
-  .content {
-    margin: 0 auto 2rem auto;
-    text-align: left;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    max-width: 75%;
-    line-height: 1.5rem;
+  .logo,
+  .process,
+  .infographic {
+    width: 60%;
   }
 
-  .logo {
-    width: 75%;
-    display: block;
-    margin: 0 auto 10rem auto;
-  }
-
-  .process {
-    width: 100%;
-    display: block;
-    margin: 0 auto 8rem auto;
-  }
-
-  .projects img {
-    margin: 0 auto;
-    width: 100%;
-    display: block;
-  }
-
-
-  .app {
-    width: 100%;
-    display: block;
-  }
-
-  .vows-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 100%;
-    gap: 1rem;
-    margin: 0 auto 10rem auto;
-    width: 100%;
-  }
-
-  .vows-grid img {
-    width: 100%;
-    display: block;
-  }
-
-  main video {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    padding-top: 2rem;
-    padding-bottom: 6rem;
-  }
-
-  .video2 {
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-    height: auto;
-    padding-top: 0;
-    padding-bottom: 8rem;
-  }
-
-  .final {
-    width: 100%;
-    display: block;
-    margin: 0 auto 10rem auto;
+  .objective {
+    gap: 2rem;
+    flex-direction: column;
   }
 
   footer {
-    background-color: #FFE9EF;
-    padding: 6rem 0 4rem 0;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
+    padding: 4rem 2rem;
   }
 
   .footer-name {
-    font-family: "Figtree", sans-serif;
-    font-size: 200%;
-    font-weight: 800;
-    color: #282828;
-    margin: 0;
+    font-size: 180%;
   }
 
-  .footer-name2 {
-    font-family: "Figtree", sans-serif;
-    font-size: 100%;
-    font-weight: 500;
-    color: #282828;
-    margin: 2rem 0 0 0;
+}
+
+/* Small screens adjustments (max-width 400px) */
+@media (max-width: 400px) {
+
+  header {
+    padding: 0.75rem 1rem;
+  }
+
+  .site-logo img {
+    height: 35px;
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+    font-size: 10px;
+  }
+
+  main h1 {
+    font-size: 24px;
+    line-height: 1.8rem;
+  }
+
+  main h2 {
+    font-size: 20px;
+  }
+
+  main h3 {
+    font-size: 14px;
+  }
+
+  main h4 {
+    font-size: 22px;
+  }
+
+  .about2 {
+    font-size: 16px;
+    line-height: 1.3rem;
+  }
+
+  .projects,
+  .content,
+  .coop {
+    font-size: 13px;
+    margin: 1.5rem 0;
   }
 
   .one,
   .two {
-    list-style-type: none;
-    display: flex;
-    gap: 4rem;
-    padding: 0;
-    margin: 1rem 0;
+    gap: 1rem;
   }
-
-  footer a {
-    font-size: 14px;
-    font-family: "Figtree", sans-serif;
-    font-weight: 500;
-    color: #282828;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  footer a:hover {
-    color: #369BCE;
-  }
-
-  footer ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
 
 }
