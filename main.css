@@ -152,7 +152,7 @@ main a:hover {
   justify-content: center;
   grid-template-columns: 32.714fr 67.286fr;
   gap: 1.5rem;
-  margin: 1.5rem 3rem 3rem 3rem;
+  margin: 1.5rem 3rem 0 3rem;
 }
 
 .grid-image {
@@ -175,7 +175,7 @@ main a:hover {
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  margin: 1rem 4rem 6rem 4rem;
+  margin: 1.5rem 3rem 3rem 3rem;
 }
 
 main h4 {
@@ -216,7 +216,7 @@ main h5 {
   height: auto;
   margin-left: 4rem;
   margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 main h2 {
@@ -441,7 +441,7 @@ figure {
 }
 
 .title {
-  margin: 0 auto 1rem auto;
+  margin: 0 3rem 1rem 3rem;
   text-align: center;
   font-family: "Lato", sans-serif;
 }
@@ -538,11 +538,11 @@ footer {
 }
 
 .footer-name {
-  font-family: "adobe-caslon-pro", serif;
+  font-family: "Figtree", sans-serif;
   font-size: 250%;
-  font-weight: 400;
+  font-weight: 500;
   color: #282828;
-  margin: 0;
+  margin: 0 0 .25rem 0;
 }
 
 .footer-name2 {
@@ -668,13 +668,23 @@ footer ul {
 }
 
 .coop {
-  margin: 4rem auto 6rem auto;
+  margin: 4rem auto 3rem auto;
   text-align: left;
   font-family: "Lato", sans-serif;
   font-size: 15px;
   max-width: 45%;
   line-height: 1.5rem;
 }
+
+.coop2 {
+  margin: 4rem auto 8rem auto;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  max-width: 45%;
+  line-height: 1.5rem;
+}
+
 
 .w3-content {
   position: relative;
@@ -753,6 +763,8 @@ footer ul {
   width: 75%;
   margin: 0 auto 14rem auto;
 }
+
+
 
 /* Mobile Responsive Styles - Phone Sizes (480px and below) */
 @media (max-width: 480px) {
@@ -852,7 +864,7 @@ footer ul {
 
   .about-grid {
     grid-template-columns: 1fr;
-    margin: 1rem 0 4rem 0;
+    margin: 1rem 0 3rem 0;
     gap: 1rem;
   }
 
