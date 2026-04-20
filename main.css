@@ -42,7 +42,7 @@ main {
 main h1 {
   font-size: 64px;
   text-align: left;
-  width: 50%;
+  width: 100%;
   font-family: "adobe-caslon-pro", serif;
   line-height: 3.5rem;
   font-weight: 400;
@@ -135,7 +135,7 @@ main a:hover {
   display: grid;
   justify-content: center;
   grid-template-columns: 67.286fr 32.714fr;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0 3rem 0 3rem;
 }
 
@@ -143,16 +143,16 @@ main a:hover {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin: 1.5rem 3rem 0 3rem;
+  gap: 2rem;
+  margin: 2rem 3rem 0 3rem;
 }
 
 .grid3 {
   display: grid;
   justify-content: center;
   grid-template-columns: 32.714fr 67.286fr;
-  gap: 1.5rem;
-  margin: 1.5rem 3rem 0 3rem;
+  gap: 2rem;
+  margin: 2rem 3rem 0 3rem;
 }
 
 .grid-image {
@@ -163,7 +163,6 @@ main a:hover {
 .grid-image img {
   width: 100%;
   display: block;
-  border-radius: 4px;
 }
 
 .grid-image:hover {
