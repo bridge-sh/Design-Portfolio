@@ -823,6 +823,88 @@ footer ul {
   margin: 0 auto 14rem auto;
 }
 
+.gallery-title {
+  margin: 4rem 3rem 1.5rem 3rem;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+
+.gallery-title h2 {
+  font-weight: 400;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 0 3rem 3rem 3rem;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.item {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Top section */
+.small-top-left {
+  grid-column: 1;
+  grid-row: span 1;
+}
+
+.tall-center {
+  grid-column: 2;
+  grid-row: span 2;
+}
+
+.tall-right {
+  grid-column: 3;
+  grid-row: span 2;
+}
+
+/* Middle */
+.mid-left {
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+.wide-middle {
+  grid-column: 2 / span 2;
+  grid-row: span 2;
+}
+
+/* Bottom */
+.small-bottom-left {
+  grid-column: 1;
+}
+
+.hero-bottom {
+  grid-column: 1 / span 2;
+  grid-row: span 2;
+}
+
+/* Right column stack */
+.small-right-top {
+  grid-column: 3;
+}
+
+.small-right-bottom {
+  grid-column: 3;
+}
+
 
 
 /* Mobile Responsive Styles - Phone Sizes (480px and below) */
