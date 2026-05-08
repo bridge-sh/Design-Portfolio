@@ -40,11 +40,11 @@ main {
 }
 
 main h1 {
-  font-size: 64px;
+  font-size: 72px;
   text-align: left;
   width: 100%;
-  font-family: "adobe-caslon-pro", serif;
-  line-height: 3.5rem;
+  font-family: "freeman", sans-serif;
+  line-height: 4.5rem;
   font-weight: 400;
 }
 
@@ -180,8 +180,8 @@ main a:hover {
 main h4 {
   font-size: 64px;
   padding-bottom: 2rem;
-  font-family: "adobe-caslon-pro", serif;
-  font-weight: 400;
+  font-family: "Freeman", sans-serif;
+  font-weight: 300;
   line-height: 5rem;
 }
 
@@ -579,12 +579,11 @@ footer {
   justify-content: center;
 }
 
-.footer-name {
-  font-family: "Figtree", sans-serif;
-  font-size: 250%;
-  font-weight: 500;
-  color: #282828;
-  margin: 0 0 .25rem 0;
+.footer-logo {
+  height: 150px;
+  width: auto;
+  display: block;
+  margin: 0 auto 0.25rem auto;
 }
 
 .footer-name2 {
@@ -599,7 +598,7 @@ footer {
 .two {
   list-style-type: none;
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
   padding: 0;
   margin: 1rem 0;
 }
@@ -1145,8 +1144,8 @@ footer ul {
     gap: 0.5rem;
   }
 
-  .footer-name {
-    font-size: 150%;
+  .footer-logo {
+    height: 20px;
   }
 
   .footer-name2 {
@@ -1300,8 +1299,8 @@ footer ul {
     padding: 4rem 2rem;
   }
 
-  .footer-name {
-    font-size: 180%;
+  .footer-logo {
+    height: 25px;
   }
 
 }
