@@ -43,9 +43,9 @@ main h1 {
   font-size: 72px;
   text-align: left;
   width: 100%;
-  font-family: "freeman", sans-serif;
+  font-family: "Figtree", sans-serif;
   line-height: 4.5rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .about1 {
@@ -180,8 +180,8 @@ main a:hover {
 main h4 {
   font-size: 64px;
   padding-bottom: 2rem;
-  font-family: "Freeman", sans-serif;
-  font-weight: 300;
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
   line-height: 5rem;
 }
 
@@ -674,6 +674,36 @@ footer ul {
   width: 100%;
   display: block;
 }
+/*
+.little-process-grid {
+  display: flex;
+  gap: 2rem;
+  height: 400px;
+  margin: 0 auto 14rem auto;
+  width: auto;
+  justify-content: center;
+}
+
+.little-process-grid img {
+  height: 100%;
+  object-fit: cover;
+}
+*/
+
+.little-process-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: .3252fr .4012fr .2382fr;
+  gap: 1.5rem;
+  margin: 0 auto 14rem auto;
+  width: 80%;
+}
+
+.little-process-grid img {
+  width: 100%;
+  display: block;
+}
+
 
 .infographic {
   display: block;
